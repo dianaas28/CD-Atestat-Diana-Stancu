@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
@@ -15,9 +15,9 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
         body {
             background-color: #F4D9D0;
+            overflow-x:hidden;
         }  
           .navbar {
             display: flex;
@@ -88,10 +88,78 @@
             margin-left: 5px;
         }
 
+
+        .puncte{
+            width: 80px;
+            height: 7px;
+            background-color: #C75B7A;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
      
+        .titlu-produs {
+            text-align: center;
+            font-size: 40px;
+            color: #921A40;
+            margin-bottom: 20px;
+        }
+
+        .lista-produse {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+        }
+
+        .produs {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .produs:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .produs img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .produs h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #921A40;
+        }
+
+        .produs a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+       
+            .grid-produse {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+
+    
+
+          
+      
+       
            p{ 
            
             font-family:'Shafarik', sans-serif;
+            text-align: start;
+            font-size:30px;
+            color: #921A40;
+            
           
            }
            .paragraf{
@@ -107,8 +175,8 @@
             
            }
            img{
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 300px;
            border-radius: 10%;
            object-fit: cover;
            display: flex;
@@ -116,15 +184,15 @@
            padding: auto;
            
            }
-        .imagine-about{
+        .img{
             display: flex;
             justify-content: center;
             align-items: center;
-            gap:30px;
-            width:500px;
-           
-            margin-right:30px;
-            margin-bottom: 30px;
+            gap:120px;
+            margin-top: 100px;
+            border: #cc4d71;
+            margin-bottom: 40px;
+            
 
             
 
@@ -143,10 +211,9 @@
              
         }
         .paragrafl{
-           text-align: center;
+            text-align:center;
+          font-size: 25px;
           color:#921A40;
-          font-size:25px;
-          
 
             
         }
@@ -158,50 +225,59 @@
             border-radius: 5px;
             cursor:pointer;
             transition:0.3s;
-            margin-top: 30px;
+            margin-top: 100px;
         }
-        .info{
-            text-align: left;
-          color:#921A40;
-          font-size:70px;
-            margin-top: 50px;
-          margin-left:30px;
-         
-        
-        }
-        .linie{
-            height:7px;
-            background-color: #921A40;
-            margin:20px ;
-            width: 19%;
+        .jocuri {
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
             display: flex;
-            
+            align-items: center;
+            gap: 40px;
+            margin-left:75px;
         }
-        .scris{
-        
-           font-size: 24px;
-         margin-top:10px;
-           text-align:left;
-            flex-direction:column;
-            margin-left: 20px;
-            margin-right:80px;
-
+        .produs-img {
+            width:50%;
+            height: auto;
+            border-radius: 10px;
+           
         }
-        .despre{
-          display: flex;
-          flex:1;
-            align-items: left;
-            font-size:21px;
+        .detalii-produs {
+            width: 50%;
+        }
+        .titlu {
+            font-size: 36px;
             color: #921A40;
-            margin-left: 20px;
-            justify-content: space-between;
-            
+            margin-bottom: 20px;
         }
-        .p-s{
-            margin-top:10px;
+        .descriere {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            margin-right:20px;
+        }
+        .pret {
+            font-size: 28px;
+            color: #C75B7A;
+            font-weight: bold;
+        }
+        .buton-cos {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white;
+            background-color: #921A40;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buton-cos:hover {
+            background-color: #C75B7A;
         }
         
-
         .footer {
     background-color: #C75B7A;
     padding: 20px 0;
@@ -266,23 +342,12 @@
     color: #ffffff;
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
     opacity: 0.8;
 }
-.top-games h2 {
-    font-size: 30px;
-    color: #921A40;
-    margin-bottom: 20px;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
-}
-        
-        
-
-</style>
-
+    </style>
 </head>
 <body>
-    
     <nav class="navbar">
         <div class="logo">
             <img src="logonav.jpeg">
@@ -303,47 +368,48 @@
             </li>
         </ul>
     </nav>
-    <p class="info"> About</p>
-    <hr class="linie">
-    <div class="despre">
-        <div class="scris">
-            <p><b>Bine ai venit la Games World – destinația ta supremă pentru toate jocurile de societate și petrecere!</b><br>
-                La Games World, pasiunea noastră pentru divertismentul în grup și provocările interactive se transformă într-o colecție vastă de jocuri care vor aduce zâmbete și momente memorabile fiecărui jucător, indiferent de vârstă. Fie că ești un fan al jocurilor clasice sau îți place să descoperi noi provocări, avem ceva pentru toți!
+    <div class="jocuri">
+        <img style="width: 800px;height: 700px;"src="produs22.jpg"  class="produs-img">
+        <div class="detalii-produs">
+            <h1 class="titlu">Jenga</h1>
+            <p class="descriere"><b>Jenga</b> este un joc clasic de dexteritate, perfect pentru toată familia și prietenii! Scopul este simplu, dar provocator: trage o piesă din turnul de lemn și pune-o în vârful acestuia fără ca structura să se prăbușească. Fiecare mișcare adaugă tensiune, iar turnul devine tot mai instabil pe măsură ce avansează jocul.
+                Un joc care combină răbdarea, echilibrul și nervoasele momente de tensiune, iar cel care reușește să rămână calm și să pună piesele corect până la sfârșit, câștigă!
 
-                 Scopul nostru este să îți oferim o experiență de joc captivantă și să aducem familia și prietenii împreună, învățând în același timp, distrându-ne și consolidând relațiile prin jocuri care pun la încercare atât creativitatea, cât și spiritul de echipă.
-
-                În Games World, vei găsi jocuri pentru toate gusturile: jocuri de logică, jocuri de cuvinte, jocuri de strategie și jocuri de cooperare care te vor ține în suspans de la început până la sfârșit. Iar dacă vrei să adaugi o notă personală sesiunilor de joc, ai la dispoziție ediții speciale și jocuri tematice, care vor face fiecare întâlnire mai interesantă.
-           <br>
-           ♛<b>Misiunea noastră:</b> Să aducem mai multe momente de distracție și conectare în fiecare casă, birou sau întâlnire socială!<br>
-           ♛<b>Viziunea noastră:</b> Să devenim locul de referință pentru toți iubitorii de jocuri, oferind o experiență unică și produse de calitate.
-
-
-
-            </p>
+                <br>
+                <b>Ce contine jocul?</b><br>
+                ✔ 54 de piese de lemn – Fiecare piesă are dimensiuni standard și este ușor de manevrat.<br>
+                
+                <b> Cum se joaca?</b><br>
+               Fiecare jucător, pe rând, trebuie să tragă o piesă din partea de jos a turnului și să o plaseze pe vârful acestuia. <br>
+               Fiecare piesă trebuie să fie trasă cu o singură mână și să fie așezată pe cel mai înalt nivel.<br>
+               Jocul continuă până când turnul se prăbușește!<br>
+                
+                
+             <p>100,00 RON</p>
+                
+           <button class="buton-cos"> Adaugă în Coș</button>
+           </p><br>
            
-            </div>
-  <img class="imagine-about" src="poza-ab.jpg"> 
-
     </div>
-<br><br><br>
-</body>
-<footer class="footer">
-    <div class="footer-links">
-        <a href="atestatnou.html">Home</a>
-        <a href="jocuri.html">Games</a>
-        <a href="recenzii.html">Reviews</a>
-        <a href="formular.html">Contact</a>
-        <a href="desprenoi.html">About</a>
     </div>
-    
-   
-    <div class="social-icons">
-        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-    </div>
-    
-    <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
-</footer>
+    </body>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="atestatnou.html">Home</a>
+            <a href="jocuri.html">Games</a>
+            <a href="recenzii.html">Reviews</a>
+            <a href="formular.html">Contact</a>
+            <a href="desprenoi.html">About</a>
+        </div>
+        
+       
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
+    </footer>
 </html>

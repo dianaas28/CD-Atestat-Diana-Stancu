@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #F4D9D0;
+            overflow-x:hidden;
+        }  
+          .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:#C75B7A;
+            padding: 15px 20px;
+            box-shadow: 0px 4px 6px #d77692;
+        }    .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:#C75B7A;
+            padding: 15px 20px;
+            box-shadow: 0px 4px 6px #d77692;
+        }
+        .logo img {
+            width: 90px;
+            height:auto;
+            border-radius: 10px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #d3d3d3;
+            color: #545454;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            background: transparent;
+            color: black;
+        }
+
+        .search-box input::placeholder {
+            color: black;
+        }
+
+        .search-box button {
+            background: none;
+            border: none;
+            color: black;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: 5px;
+        }
+
+
+        .puncte{
+            width: 80px;
+            height: 7px;
+            background-color: #C75B7A;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+     
+        .titlu-produs {
+            text-align: center;
+            font-size: 40px;
+            color: #921A40;
+            margin-bottom: 20px;
+        }
+
+        .lista-produse {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+        }
+
+        .produs {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .produs:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .produs img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .produs h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #921A40;
+        }
+
+        .produs a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+       
+            .grid-produse {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+
+    
+
+          
+      
+       
+           p{ 
+           
+            font-family:'Shafarik', sans-serif;
+            text-align: start;
+            font-size:30px;
+            color: #921A40;
+            
+          
+           }
+           .paragraf{
+            text-align: center;
+            margin-top: 50px;
+          margin-left:50px;
+          font-size: 70px;
+          color:#921A40;
+
+
+            
+            
+            
+           }
+           img{
+            height: 300px;
+            width: 300px;
+           border-radius: 10%;
+           object-fit: cover;
+           display: flex;
+           justify-content: space-between;
+           padding: auto;
+           
+           }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:120px;
+            margin-top: 100px;
+            border: #cc4d71;
+            margin-bottom: 40px;
+            
+
+            
+
+
+        }
+        .imagine-cu-margine1{
+            border: 7px solid rgb(26, 66, 26); 
+             
+        }
+        .imagine-cu-margine2{
+            border: 7px solid #9CAEB7; 
+             
+        }
+        .imagine-cu-margine3{
+            border: 7px solid rgb(26, 26, 77); 
+             
+        }
+        .paragrafl{
+            text-align:center;
+          font-size: 25px;
+          color:#921A40;
+
+            
+        }
+        .buton{
+            padding: 10px 20px;
+            font-size: 25px;
+            color:#C75B7A;
+            background-color: #921A40;
+            border-radius: 5px;
+            cursor:pointer;
+            transition:0.3s;
+            margin-top: 100px;
+        }
+        .jocuri {
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-left:75px;
+        }
+        .produs-img {
+            width:50%;
+            height: auto;
+            border-radius: 10px;
+           
+        }
+        .detalii-produs {
+            width: 50%;
+        }
+        .titlu {
+            font-size: 36px;
+            color: #921A40;
+            margin-bottom: 20px;
+        }
+        .descriere {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            margin-right:20px;
+        }
+        .pret {
+            font-size: 28px;
+            color: #C75B7A;
+            font-weight: bold;
+        }
+        .buton-cos {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white;
+            background-color: #921A40;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buton-cos:hover {
+            background-color: #C75B7A;
+        }
+        
+        .footer {
+    background-color: #C75B7A;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d3d3d3;
+}
+
+.footer-slogan {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #d3d3d3;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logonav.jpeg">
+        </div>
+       
+        <ul class="nav-links" >
+            <li><a href="atestatnou.html">Home</a></li>
+            <li><a href="jocuri.html">Games</a></li>
+            <li><a href="recenzii.html">Reviews</a></li>
+            <li><a href="formular.html">Contact</a></li>
+            
+            <li><a href="desprenoi.html">About</a></li>
+            <li>
+                <div class="search-box">
+                    <input style="width: 250px;" type="text" placeholder="Caută...">
+                    <button>🔍</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="jocuri">
+        <img style="width: 800px;height: 700px;"src="produs5.jpg"  class="produs-img">
+        <div class="detalii-produs">
+            <h1 class="titlu">Monopoly</h1>
+            <p class="descriere">Pregătește-te să intri în lumea afacerilor cu Monopoly, jocul care a captivat milioane de jucători de-a lungul decadelor! Acesta este jocul ideal pentru cei care iubesc să investească, să câștige proprietăți și să-și pună la încercare abilitățile de negociere. 
+
+           <br>
+           <b>Ce contine jocul?</b><br>
+                ✔ Tablă de joc tematică
+                <br>
+                ✔6 pioni colecționabili
+              
+                <br>
+                ✔Bancnote tematice<br>
+                ✔ Casete de joc personalizate 
+                
+                 
+                <br>
+                
+                <b>Cum se joacă?</b> <br>
+                Achiziționează proprietăți – Fiecare jucător își începe călătoria pe tabla de joc, cumpărând terenuri, case și hoteluri.
+                <br>
+                Plătește și colectează chirii – Cumpără cât mai multe proprietăți pentru a colecta chirii de la adversari, dar fii atent la taxe și impozite!
+                <br>
+                Negociază și cumpără – La fel ca în afaceri, negocierea este cheia. Poți cumpăra, vinde și tranzacționa proprietăți pentru a deveni cel mai bogat jucător.
+                <br>
+                Ajungi în faliment? – Dacă ești norocos, vei fi cel care ajunge să domine piața și să înfrângă toți ceilalți jucători.
+                <br>
+
+                Câștigă! – Câștigătorul este cel care reușește să devină cel mai bogat, lăsându-i pe ceilalți jucători în faliment.
+                
+                <br>
+                <p>135,99 RON</p>
+                
+
+           <button class="buton-cos"> Adaugă în Coș</button>
+           </p>
+  
+    </div>
+    </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="atestatnou.html">Home</a>
+            <a href="jocuri.html">Games</a>
+            <a href="recenzii.html">Reviews</a>
+            <a href="formular.html">Contact</a>
+            <a href="desprenoi.html">About</a>
+        </div>
+        
+       
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
+    </footer>
+    </html>
+    

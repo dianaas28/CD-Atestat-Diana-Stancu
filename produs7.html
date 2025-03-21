@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
@@ -15,9 +16,9 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
         body {
             background-color: #F4D9D0;
+            overflow-x:hidden;
         }  
           .navbar {
             display: flex;
@@ -88,10 +89,78 @@
             margin-left: 5px;
         }
 
+
+        .puncte{
+            width: 80px;
+            height: 7px;
+            background-color: #C75B7A;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
      
+        .titlu-produs {
+            text-align: center;
+            font-size: 40px;
+            color: #921A40;
+            margin-bottom: 20px;
+        }
+
+        .lista-produse {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+        }
+
+        .produs {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .produs:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .produs img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .produs h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #921A40;
+        }
+
+        .produs a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+       
+            .grid-produse {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+
+    
+
+          
+      
+       
            p{ 
            
             font-family:'Shafarik', sans-serif;
+            text-align: start;
+            font-size:30px;
+            color: #921A40;
+            
           
            }
            .paragraf{
@@ -107,8 +176,8 @@
             
            }
            img{
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 300px;
            border-radius: 10%;
            object-fit: cover;
            display: flex;
@@ -116,15 +185,15 @@
            padding: auto;
            
            }
-        .imagine-about{
+        .img{
             display: flex;
             justify-content: center;
             align-items: center;
-            gap:30px;
-            width:500px;
-           
-            margin-right:30px;
-            margin-bottom: 30px;
+            gap:120px;
+            margin-top: 100px;
+            border: #cc4d71;
+            margin-bottom: 40px;
+            
 
             
 
@@ -143,10 +212,9 @@
              
         }
         .paragrafl{
-           text-align: center;
+            text-align:center;
+          font-size: 25px;
           color:#921A40;
-          font-size:25px;
-          
 
             
         }
@@ -158,50 +226,59 @@
             border-radius: 5px;
             cursor:pointer;
             transition:0.3s;
-            margin-top: 30px;
+            margin-top: 100px;
         }
-        .info{
-            text-align: left;
-          color:#921A40;
-          font-size:70px;
-            margin-top: 50px;
-          margin-left:30px;
-         
-        
-        }
-        .linie{
-            height:7px;
-            background-color: #921A40;
-            margin:20px ;
-            width: 19%;
+        .jocuri {
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
             display: flex;
-            
+            align-items: center;
+            gap: 40px;
+            margin-left:75px;
         }
-        .scris{
-        
-           font-size: 24px;
-         margin-top:10px;
-           text-align:left;
-            flex-direction:column;
-            margin-left: 20px;
-            margin-right:80px;
-
+        .produs-img {
+            width:50%;
+            height: auto;
+            border-radius: 10px;
+           
         }
-        .despre{
-          display: flex;
-          flex:1;
-            align-items: left;
-            font-size:21px;
+        .detalii-produs {
+            width: 50%;
+        }
+        .titlu {
+            font-size: 36px;
             color: #921A40;
-            margin-left: 20px;
-            justify-content: space-between;
-            
+            margin-bottom: 20px;
         }
-        .p-s{
-            margin-top:10px;
+        .descriere {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            margin-right:20px;
+        }
+        .pret {
+            font-size: 28px;
+            color: #C75B7A;
+            font-weight: bold;
+        }
+        .buton-cos {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white;
+            background-color: #921A40;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buton-cos:hover {
+            background-color: #C75B7A;
         }
         
-
         .footer {
     background-color: #C75B7A;
     padding: 20px 0;
@@ -266,66 +343,62 @@
     color: #ffffff;
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
     opacity: 0.8;
 }
-.top-games h2 {
-    font-size: 30px;
-    color: #921A40;
-    margin-bottom: 20px;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
-}
-        
-        
-
-</style>
-
+    </style>
 </head>
 <body>
-    
     <nav class="navbar">
         <div class="logo">
             <img src="logonav.jpeg">
         </div>
-       
-        <ul class="nav-links" >
+        
+        </button>
+        <ul class="nav-links">
             <li><a href="atestatnou.html">Home</a></li>
             <li><a href="jocuri.html">Games</a></li>
             <li><a href="recenzii.html">Reviews</a></li>
             <li><a href="formular.html">Contact</a></li>
-            
+        
             <li><a href="desprenoi.html">About</a></li>
             <li>
                 <div class="search-box">
-                    <input style="width: 250px;" type="text" placeholder="Caută...">
+                    <input type="text" placeholder="Caută...">
                     <button>🔍</button>
                 </div>
             </li>
         </ul>
     </nav>
-    <p class="info"> About</p>
-    <hr class="linie">
-    <div class="despre">
-        <div class="scris">
-            <p><b>Bine ai venit la Games World – destinația ta supremă pentru toate jocurile de societate și petrecere!</b><br>
-                La Games World, pasiunea noastră pentru divertismentul în grup și provocările interactive se transformă într-o colecție vastă de jocuri care vor aduce zâmbete și momente memorabile fiecărui jucător, indiferent de vârstă. Fie că ești un fan al jocurilor clasice sau îți place să descoperi noi provocări, avem ceva pentru toți!
-
-                 Scopul nostru este să îți oferim o experiență de joc captivantă și să aducem familia și prietenii împreună, învățând în același timp, distrându-ne și consolidând relațiile prin jocuri care pun la încercare atât creativitatea, cât și spiritul de echipă.
-
-                În Games World, vei găsi jocuri pentru toate gusturile: jocuri de logică, jocuri de cuvinte, jocuri de strategie și jocuri de cooperare care te vor ține în suspans de la început până la sfârșit. Iar dacă vrei să adaugi o notă personală sesiunilor de joc, ai la dispoziție ediții speciale și jocuri tematice, care vor face fiecare întâlnire mai interesantă.
-           <br>
-           ♛<b>Misiunea noastră:</b> Să aducem mai multe momente de distracție și conectare în fiecare casă, birou sau întâlnire socială!<br>
-           ♛<b>Viziunea noastră:</b> Să devenim locul de referință pentru toți iubitorii de jocuri, oferind o experiență unică și produse de calitate.
-
-
-
-            </p>
-           
-            </div>
-  <img class="imagine-about" src="poza-ab.jpg"> 
-
+    <div class="jocuri">
+        <img style="width: 800px;height: 700px;"src="produs7.jpg"  class="produs-img">
+        <div class="detalii-produs">
+            <h1 class="titlu">The Castle of Burgunoy</h1>
+            <p class="descriere">Intră în fascinanta lume medievală cu <b>The Castles of Burgundy</b>, un joc strategic captivant în care vei construi și dezvolta propriul tărâm în regiunea Burgundia. Ca un nobil al secolului XV, vei extinde așezările, vei construi castele, vei înflori comerțul și vei descoperi noi oportunități economice.
+                
+                <br><b>Ce conține cutia?</b> <br>
+                1 tablă centrală de joc – Reprezentând resursele disponibile și zonele de achiziție.<br>
+                4 table individuale de jucător – Fiecare jucător are propria regiune de dezvoltat, cu spații pentru terenuri, clădiri și râuri.<br>
+                164 dale hexagonale – Inclusiv castele, clădiri, mine, animale, nave și cunoștințe, fiecare având roluri strategice diferite.<br>
+                42 dale cu mărfuri – Folosite pentru schimburi comerciale și puncte suplimentare.<br>
+                20 zaruri – Folosite pentru acțiuni strategice în fiecare tură.<br>
+                
+                <b>Cum se joacă?</b><br>
+                ✔ Aruncă zarurile – În fiecare tură, jucătorii aruncă două zaruri și le folosesc pentru a efectua acțiuni strategice.<br>
+                ✔ Achiziționează dale – Folosind rezultatul zarurilor, poți cumpăra clădiri, nave, mine sau animale din piață.<br>
+                ✔ Plasează dalele în ducatul tău – Construiește orașe, extinde comerțul și optimizează punctele pentru a câștiga.<br>
+                ✔ Colectează și vinde mărfuri – Obține monede și resurse suplimentare pentru a îți dezvolta teritoriul.<br>
+                ✔ Obține puncte de victorie – Fiecare alegere strategică influențează scorul final, iar cel cu cele mai multe puncte câștigă jocul!<br>
+                <p>110.00 RON</p>
+           <button class="buton-cos"> Adaugă în Coș</button>
+           </p>
+  
     </div>
-<br><br><br>
+</div>
+   
+  
+   
+
 </body>
 <footer class="footer">
     <div class="footer-links">
@@ -347,3 +420,4 @@
     <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
 </footer>
 </html>
+  

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
@@ -15,11 +15,18 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
         body {
             background-color: #F4D9D0;
-        }   
-         .navbar {
+            overflow-x:hidden;
+        }  
+          .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:#C75B7A;
+            padding: 15px 20px;
+            box-shadow: 0px 4px 6px #d77692;
+        }    .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -81,16 +88,85 @@
             margin-left: 5px;
         }
 
+
+        .puncte{
+            width: 80px;
+            height: 7px;
+            background-color: #C75B7A;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+     
+        .titlu-produs {
+            text-align: center;
+            font-size: 40px;
+            color: #921A40;
+            margin-bottom: 20px;
+        }
+
+        .lista-produse {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+        }
+
+        .produs {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .produs:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .produs img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .produs h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #921A40;
+        }
+
+        .produs a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+       
+            .grid-produse {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+
+    
+
+          
+      
+       
            p{ 
            
             font-family:'Shafarik', sans-serif;
-           
+            text-align: start;
+            font-size:30px;
+            color: #921A40;
+            
           
            }
            .paragraf{
-          text-align: center;
-          margin-top: 50px;
-          font-size: 60px;
+            text-align: center;
+            margin-top: 50px;
+          margin-left:50px;
+          font-size: 70px;
           color:#921A40;
 
 
@@ -134,88 +210,75 @@
             border: 7px solid rgb(26, 26, 77); 
              
         }
-        
+        .paragrafl{
+            text-align:center;
+          font-size: 25px;
+          color:#921A40;
 
             
-        
+        }
         .buton{
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
+            padding: 10px 20px;
+            font-size: 25px;
             color:#C75B7A;
-            background-color: #a71e49;
+            background-color: #921A40;
             border-radius: 5px;
             cursor:pointer;
-          transition:0.3s;
-            margin-top: 30px;
-           height: 35px;
-           width: 100px;
+            transition:0.3s;
+            margin-top: 100px;
         }
-        .puncte{
-            width: 80px;
-            height: 7px;
-            background-color: #C75B7A;
-            margin: 10px auto;
-            border-radius: 5px;
-        }
-        .contact-form{
-        
-            display: flex;
-            gap:10px;
-            justify-content: space-between;
-            margin-top: 20px;
-            align-items: flex-start;
-
-        }
-        .contact-form input{
-            flex:1;
-            padding:12px;
-            border:2px;
-            border-radius: 5px;
-            font-size: 16px;
+        .jocuri {
             width: 100%;
-            margin-left: 15px;
-            margin-right: 7px;
-            
+            padding: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-left:75px;
         }
-        .contact-form button{
-            background-color: #C75B7A;
-            color:white;
-            padding: 12px 20px;
-            border-radius:5px;
-            font-size: 12px;
-            cursor:pointer;
-            margin-right: 15px;
-            
+        .produs-img {
+            width:50%;
+            height: auto;
+            border-radius: 10px;
+           
         }
-        .info{
-            writing-mode: column;
-          
-            text-align: left;
-            font-size:20px;
+        .detalii-produs {
+            width: 50%;
+        }
+        .titlu {
+            font-size: 36px;
             color: #921A40;
-            margin-left: 80px;
-            margin-top: 40px;
+            margin-bottom: 20px;
         }
-    .map
-    { 
+        .descriere {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            margin-right:20px;
+        }
+        .pret {
+            font-size: 28px;
+            color: #C75B7A;
+            font-weight: bold;
+        }
+        .buton-cos {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white;
+            background-color: #921A40;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buton-cos:hover {
+            background-color: #C75B7A;
+        }
         
-       display: flex;
-      margin-right: 10px;
-       width:90%;
-       
-       padding-top: 20px;
-
-       
-    }
-    iframe{
-        margin-left:140px;
-        margin-top:30px;
-        width: 1000px;
-        height: 400px;
-    }
-    
-    .footer {
+        .footer {
     background-color: #C75B7A;
     padding: 20px 0;
     text-align: center;
@@ -279,19 +342,12 @@
     color: #ffffff;
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
     opacity: 0.8;
 }
-        
-
-       
-
     </style>
 </head>
-
 <body>
-    
-      </script> 
-     
     <nav class="navbar">
         <div class="logo">
             <img src="logonav.jpeg">
@@ -312,47 +368,36 @@
             </li>
         </ul>
     </nav>
+    <div class="jocuri">
+        <img style="width: 800px;height: 700px;" src="produs29.jpg"  class="produs-img">
+        <div class="detalii-produs">
+            <h1 class="titlu"> Team 3  </h1>
+            <p class="descriere"><b> Team 3  </b> este un joc de cooperare amuzant și provocator, bazat pe principiul celor trei maimuțe înțelepte: una nu vede, una nu vorbește, iar una nu aude! Jucătorii trebuie să colaboreze pentru a construi structuri folosind doar comunicarea limitată impusă de rolul lor. Este un joc ideal pentru echipe, petreceri și sesiuni de distracție nebună cu prietenii!
 
-    <div class="paragraf">
-        <p> Contact</p> 
+                <br>
+                <b>Ce contine jocul?</b><br>
+                ✔Blocuri colorate – Piese speciale folosite pentru a construi structurile. <br>
+                ✔ Cărți cu modele de construcție – Indică structurile ce trebuie recreate.<br>
+                ✔ Un design tematic cu cele trei maimuțe – Inspirat de celebrul simbol al comunicării!<br>
+                
+                <b> Cum se joaca?</b><br>
+                Fiecare jucător are un rol unic:<br>
+
+                Maimuța care nu vede – Construiește structura fără să vadă piesele.<br>
+                Maimuța care nu vorbește – Încearcă să transmită informația folosind doar gesturi.<br>
+                Maimuța care nu aude – Trebuie să înțeleagă indicațiile și să le comunice mai departe.<br>
+                Jucătorii trebuie să colaboreze pentru a finaliza construcția în timp limitat! <br>
+                Dacă echipa reușește, câștigă puncte și poate trece la următoarea provocare.<br>
+                
+                
+             <p>64,99 RON</p>
+                
+           <button class="buton-cos"> Adaugă în Coș</button>
+           </p><br>
+           
     </div>
-    <div class="puncte"></div><div>
-    
-    <form name="submit-to-google-sheet" class="contact-form">
-        <input type="name" name="nume" placeholder="Nume" required>
-            <input name="email" type="email" placeholder="Email" required>
-            <input type="text" name="mesaj" placeholder="Mesaj" required>
-        <button type="submit">Send</button>
-     </form>
-    </div>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxi6YH_K8eW2dhyzKrIpavefAnIuvGDPAvZ8t8QAQO5p7ItT-kOebk54bHqxVausddh/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script> 
-     
-      <div class="map"> 
-        <div class="info">
-        <p >New York, NY, USA</p>
-        <p >✆ +1-712359865</p>
-        <p >✉ info@gamesworld.com</p>
-        <p>⏲︎ Mon-Fri-08:00-15:00</p>
-        <p>Sat-09:00-14:00</p>
-       </div>
-       
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07670836075!2d-74.30915277037438!3d40.69667268701911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1741357757585!5m2!1sro!2sro" width="50%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>    
-          
-            </div>
-       
-        
+</div>
 </body>
-
 <footer class="footer">
     <div class="footer-links">
         <a href="atestatnou.html">Home</a>
