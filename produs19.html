@@ -1,11 +1,14 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shafarik&display=swap" rel="stylesheet">
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -14,23 +17,32 @@
         }
 
         body {
-            background-color: #ffffff;
-            overflow-x:hidden;
+            background-color: #F4D9D0;
+            overflow-x: hidden;
         }
 
         .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color:#C75B7A;
+            background-color: #C75B7A;
+            padding: 15px 20px;
+            box-shadow: 0px 4px 6px #d77692;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #C75B7A;
             padding: 15px 20px;
             box-shadow: 0px 4px 6px #d77692;
         }
 
         .logo img {
-            width: 100px;
-            height:auto;
-          
+            width: 77px;
+            height: auto;
+            border-radius: 10px;
         }
 
         .nav-links {
@@ -86,23 +98,15 @@
             margin-left: 5px;
         }
 
-        .menu-toggle {
-            display: none;
-            font-size: 28px;
-            color: white;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
 
-        .puncte{
+        .puncte {
             width: 80px;
             height: 7px;
             background-color: #C75B7A;
             margin: 10px auto;
             border-radius: 5px;
         }
-     
+
         .titlu-produs {
             text-align: center;
             font-size: 40px;
@@ -148,130 +152,100 @@
             color: inherit;
         }
 
-        @media (max-width: 768px) {
-            .grid-produse {
-                grid-template-columns: repeat(2, 1fr);
-            }
+
+        .grid-produse {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (max-width: 480px) {
-            .grid-produse {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
 
-           @media(max-width:768px){
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: #545454;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-                box-shadow: 0px 4px 6px #A7D477;
-            }
 
-            .nav-links li {
-                padding: 10px 0;
-            }
 
-            .menu-toggle {
-                display: block;
-            }
 
-            .nav-links.active {
-                display: flex;
-            }
 
-            .search-box {
-                width: 90%;
-                margin: 10px auto;
-            }
-           }
-           body{
-            background-color:#F4D9D0;
-            background: radial-gradient(circle,#F4D9D0,#D9ABAB);
-            font-family:'Shafarik', sans-serif;
-            
-          
-           }
-           p{ 
-           
-            font-family:'Shafarik', sans-serif;
+
+        p {
+
+            font-family: 'Shafarik', sans-serif;
             text-align: start;
-            font-size:30px;
-            color:#921A40;
-            
-          
-           }
-           .paragraf{
+            font-size: 30px;
+            color: #921A40;
+
+
+        }
+
+        .paragraf {
             text-align: center;
             margin-top: 50px;
-          margin-left:50px;
-          font-size: 70px;
-          color:#921A40;
+            margin-left: 50px;
+            font-size: 70px;
+            color: #921A40;
 
 
-            
-            
-            
-           }
-           img{
+
+
+
+        }
+
+        img {
             height: 300px;
             width: 300px;
-           border-radius: 10%;
-           object-fit: cover;
-           display: flex;
-           justify-content: space-between;
-           padding: auto;
-           
-           }
-        .img{
+            border-radius: 10%;
+            object-fit: cover;
+            display: flex;
+            justify-content: space-between;
+            padding: auto;
+
+        }
+
+        .img {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap:120px;
+            gap: 120px;
             margin-top: 100px;
             border: #cc4d71;
             margin-bottom: 40px;
-            
-
-            
 
 
-        }
-        .imagine-cu-margine1{
-            border: 7px solid rgb(26, 66, 26); 
-             
-        }
-        .imagine-cu-margine2{
-            border: 7px solid #9CAEB7; 
-             
-        }
-        .imagine-cu-margine3{
-            border: 7px solid rgb(26, 26, 77); 
-             
-        }
-        .paragrafl{
-            text-align:center;
-          font-size: 25px;
-          color:#921A40;
 
-            
+
+
         }
-        .buton{
+
+        .imagine-cu-margine1 {
+            border: 7px solid rgb(26, 66, 26);
+
+        }
+
+        .imagine-cu-margine2 {
+            border: 7px solid #9CAEB7;
+
+        }
+
+        .imagine-cu-margine3 {
+            border: 7px solid rgb(26, 26, 77);
+
+        }
+
+        .paragrafl {
+            text-align: center;
+            font-size: 25px;
+            color: #921A40;
+
+
+        }
+
+        .buton {
             padding: 10px 20px;
             font-size: 25px;
-            color:#C75B7A;
+            color: #C75B7A;
             background-color: #921A40;
             border-radius: 5px;
-            cursor:pointer;
-            transition:0.3s;
+            cursor: pointer;
+            transition: 0.3s;
             margin-top: 100px;
         }
+
         .jocuri {
             width: 100%;
             padding: 40px;
@@ -279,36 +253,40 @@
             display: flex;
             align-items: center;
             gap: 40px;
-            margin-left:75px;
+            margin-left: 75px;
         }
+
         .produs-img {
-            width:600px;
+            width: 50%;
             height: auto;
             border-radius: 10px;
-            margin-left:110px;
+
         }
-           
-        
+
         .detalii-produs {
             width: 50%;
         }
+
         .titlu {
             font-size: 36px;
             color: #921A40;
             margin-bottom: 20px;
         }
+
         .descriere {
             font-size: 20px;
             color: #333;
             margin-bottom: 20px;
             padding-right: 20px;
-            margin-right:20px;
+            margin-right: 20px;
         }
+
         .pret {
             font-size: 28px;
             color: #C75B7A;
             font-weight: bold;
         }
+
         .buton-cos {
             display: inline-block;
             margin-top: 20px;
@@ -321,24 +299,95 @@
             cursor: pointer;
             transition: 0.3s;
         }
+
         .buton-cos:hover {
             background-color: #C75B7A;
         }
+
+        .footer {
+            background-color: #C75B7A;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-slogan {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #d3d3d3;
+            transform: scale(1.1);
+        }
+
+        .footer-text {
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+            opacity: 0.8;
+        }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="logonav.jpeg">
         </div>
-       
-        <ul class="nav-links" >
+
+        <ul class="nav-links">
             <li><a href="atestatnou.html">Home</a></li>
             <li><a href="jocuri.html">Games</a></li>
             <li><a href="recenzii.html">Reviews</a></li>
             <li><a href="formular.html">Contact</a></li>
-            
+
             <li><a href="desprenoi.html">About</a></li>
+            <li> <a href="cos.html">Cart</a></li>
             <li>
                 <div class="search-box">
                     <input style="width: 250px;" type="text" placeholder="Caută...">
@@ -348,10 +397,14 @@
         </ul>
     </nav>
     <div class="jocuri">
-        <img style="width: 800px;height: 700px;"src="produs19.jpg"  class="produs-img">
+        <img style="width: 800px;height: 700px;" src="produs19.jpg" class="produs-img">
         <div class="detalii-produs">
             <h1 class="titlu">Catan Negustorii & Barbarii</h1>
-            <p class="descriere"><b>Catan Negustorii & Barbarii</b>  este o expansiune captivantă pentru celebrul joc de strategie Catan, care adaugă noi scenarii, reguli și posibilități de joc. În această variantă, insula Catan este în continuă dezvoltare, dar pericolele nu lipsesc: negustorii își transportă mărfurile pe drumuri periculoase, triburile barbare amenință regatul, iar așezările au nevoie de îmbunătățiri pentru a prospera. <br>
+            <p class="descriere"><b>Catan Negustorii & Barbarii</b> este o expansiune captivantă pentru celebrul joc de
+                strategie Catan, care adaugă noi scenarii, reguli și posibilități de joc. În această variantă, insula
+                Catan este în continuă dezvoltare, dar pericolele nu lipsesc: negustorii își transportă mărfurile pe
+                drumuri periculoase, triburile barbare amenință regatul, iar așezările au nevoie de îmbunătățiri pentru
+                a prospera. <br>
                 <b>Ce contine jocul?</b><br>
                 ✔ 24 de piese de teren suplimentare – Noi regiuni pentru a extinde harta jocului.<br>
                 ✔30 de figurine negustori și călători – Folosite în diferite scenarii pentru a transporta mărfuri<br>
@@ -359,38 +412,65 @@
                 ✔36 de piese de barbar și cavaler – Necesare pentru apărarea insulei.<br>
                 <b> Cum se joaca?</b><br>
                 Se alege un scenariu – Fiecare scenariu vine cu reguli și obiective specifice.<br>
-                Se pregătește tabla de joc – Se adaugă terenuri speciale, piese de negustori, călători, barbari și aur.<br>
+                Se pregătește tabla de joc – Se adaugă terenuri speciale, piese de negustori, călători, barbari și
+                aur.<br>
                 Jucătorii aruncă zarurile – Pentru a colecta resurse și a face schimburi.<br>
-                Se dezvoltă strategia – Se construiesc drumuri, se transportă mărfuri, se cumpără unități de apărare și se interacționează cu noile mecanici.
-                
-                
-             <p>110,00 RON</p>
-                
-           <button class="buton-cos"> Adaugă în Coș</button>
-           </p><br>
-  
-    </div>
-    </div>
-   
-  
-    </body>
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="atestatnou.html">Home</a>
-            <a href="jocuri.html">Games</a>
-            <a href="recenzii.html">Reviews</a>
-            <a href="formular.html">Contact</a>
-            <a href="desprenoi.html">About</a>
+                Se dezvoltă strategia – Se construiesc drumuri, se transportă mărfuri, se cumpără unități de apărare și
+                se interacționează cu noile mecanici.
+
+
+            <p>22,99 $</p>
+
+            <button id="add-to-cart" class="buton-cos">Adaugă în Coș</button>
+            </p>
+            <script>
+
+                document.getElementById('add-to-cart').addEventListener('click', function () {
+                    const product = {
+                        name: "Catan Negustorii & Barbarii",
+                        price: "22,99 $",
+                        image: "produs19.jpg"
+                    };
+
+                    // Preia coșul existent sau creează unul nou dacă nu există
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                    // Adaugă produsul în coș
+                    cart.push(product);
+
+                    // Salvează coșul actualizat în localStorage
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Redirecționează utilizatorul la pagina coșului
+                    window.location.href = "cos.html";
+                    alert("Produsul a fost adăugat în coș!");
+                });
+            </script>
+
         </div>
-        
-       
-        <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        </div>
-        
-        <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
-    </footer>
-    </html>
+    </div>
+
+
+</body>
+<footer class="footer">
+    <div class="footer-links">
+        <a href="atestatnou.html">Home</a>
+        <a href="jocuri.html">Games</a>
+        <a href="recenzii.html">Reviews</a>
+        <a href="formular.html">Contact</a>
+        <a href="desprenoi.html">About</a>
+        <a href="cos.html">Cart</a>
+    </div>
+
+
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <p class="footer-text">©️ 2025 Games World. All rights reserved.</p>
+</footer>
+
+</html>
